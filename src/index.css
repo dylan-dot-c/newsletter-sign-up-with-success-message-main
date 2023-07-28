@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    @apply text-charcoal-grey;
+  }
+
+  h1 {
+    @apply text-charcoal-grey text-3xl lg:text-6xl font-bold mb-5 ;
+  }
+
+  button {
+    @apply bg-dark-slate-grey rounded-md text-white text-center py-4 px-4 my-4 w-full text-lg transition;
+  }
+
+  button:hover {
+    /* background: linear-gradient(45deg, hsl(4, 100%, 67%), orange); */
+    @apply shadow-xl shadow-tomato bg-gradient-to-r from-tomato to-orange-500;
+  }
+}
